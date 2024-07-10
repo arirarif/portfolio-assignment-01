@@ -20,7 +20,8 @@ header{
     justify-content: space-between;
     align-items: center;
     max-width: 80%;
-    margin: auto;
+    margin:0 auto;
+    margin-bottom: 30px;
 }
 .nav-top-container h1{
     margin: 0;
@@ -30,15 +31,15 @@ header{
     background-color: white;
     color: black;
     border: 1px solid black;
-    ;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 /* Header style End */
 
 /* Header Banner Style start */
 .banner-container{
-    height: 652px;
+    height: 700px;
     margin: 0 auto;
     background-image: url('./images/Hero-bg.png');
     background-position: center;
@@ -47,11 +48,14 @@ header{
     text-align: center;
     padding: 100px 0;
     color: black;
+    border-top: 2px dashed darkgrey;
+    border-bottom: 2px dashed darkgrey;
 }
 .banner-container-content{
-    max-width: 1200px;
+    width: 998px;
+    height: 582px;
     margin: 0 auto;
-    padding: 0 29px;
+    padding: 0 50px;
 }
 .banner-container-content img{
     width: 150px;
@@ -59,19 +63,28 @@ header{
     margin-bottom: 20px;
 }
 .banner-container-content h2{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
     font-size: 32px;
-    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 68px;
+    margin-bottom: 30px;
 }
 .banner-container-content p{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
     font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
     margin-bottom: 30px;
 }
 .banner-container-content button{
     padding: 10px 20px;
-    background-color: black;
     color: white;
     border: none;
     font-size: 18px;
+    border-radius: 8px;
+background: rgb(13, 19, 33);
 }
 
 
@@ -80,7 +93,7 @@ header{
 /* why-development-container style start */
 .why-development-container{
     background-color: #fff;
-    padding: 50px 0;
+    margin-top: 40px;
 }
 .why-development-content{
     width: 80%;
@@ -88,21 +101,32 @@ header{
     text-align: center;
     border-radius: 16px;
     background: rgba(13, 19, 33, 0.02);
+    padding: 50px 0;
 }
 .why-development-content h2{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
     font-size: 32px;
-    margin-bottom: 20px;
+    font-weight: 800;
+    line-height: 37px;
 }
 
 .why-development-content p{
-    font-size: 17px;
-    margin-bottom: 40px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 30px;
 }
 .reason-container{
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 40px 10px;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -110,15 +134,22 @@ header{
     width: 150px;
     height: 150px;
     border-radius: 8px;
+    
 }
 
 .reason-container.left{
     flex-direction: row;
+    justify-content: space-between;
+}
+.reason-container.right{
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .reason-container .reason-text-content{
     text-align: left;
-    flex: 1;
+    width: 70%;
+    /* flex: 1; */
 }
 .reason-text-content h3{
     font-size: 24px;
@@ -149,9 +180,21 @@ header{
     width: 80%;
     margin: 0 auto;
 }
+.inspiration-content h2{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
 .inspiration-content p{
-    font-size: 17px;
-    margin-bottom: 40px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;
+    margin: 0 auto;
+    height: 100px;
 }
 .inspiration-video-wrapper{
     display: flex;
@@ -180,18 +223,26 @@ header{
     margin: 0 auto;
 }
 .current-target-content h2{
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
     font-size: 32px;
-    margin-bottom: 20px;
+    font-weight: 800;
+    height: 80px;
 }
 .current-target-content p{
-    font-size: 17px;
-    margin-bottom: 40px;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    width: 75%;;
+    height: 100px;
+    margin: auto;
 }
 .pogramming-languages{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
+    
 }
 .pogramming-language{
     padding: 40px;
@@ -211,10 +262,10 @@ header{
 }
 .pogramming-language p{
     font-size: 17px;
-    margin-bottom: 20px;
+    margin-left: 0;
 }
 .pogramming-language a{
-    text-decoration: none;
+    text-decoration: underline;
     columns: #007bff;
     font-weight: bold;
 }
@@ -232,7 +283,7 @@ header{
 /* support-container style start */
 .support-container{  
     position: relative;  
-    height: 200px;
+    height: 314px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -246,12 +297,18 @@ header{
     border-radius: 10px;
 }
 .support-container h2{
+    color: rgb(255, 255, 255);
+    font-family: Azeret Mono;
     font-size: 32px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    height: 70px;
 }
 .support-container p{
-    font-size: 17px;
-    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Azeret Mono;
+    font-size: 16px;
+    font-weight: 400;
+    height: 70px;
 }
 .support-overlay{
     position: absolute;
@@ -259,7 +316,7 @@ header{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -294,29 +351,35 @@ form button{
 /* support-container style end */
 
 /* footer-container style start */
-.footer-container{
+footer{
+    margin-top: 30px;
     background-color: #f9f9f9;
-    padding: 20px;
+
+}
+.footer-container{
+    width: 80%;
+    height: 100px;
     text-align: center;
     border-top: 2px solid white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
     margin: auto;
 }
 .footer-container p{
-    margin: 0;
-    font-size: 17px;
-    color: black;
-}
-.footer-icons{
-    margin-top: 20px;
-}
-.social-icon{
-    margin: 0 10px;
-    text-decoration: none;
+    color: rgb(13, 19, 33);
+    font-family: Azeret Mono;
     font-size: 20px;
+    font-weight: 600;
+}
+/* .footer-icons{
+    margin-top: 20px;
+} */
+.social-icon{
+    /* margin: 0 10px; */
+    text-decoration: none;
+    font-size: 30px;
+    margi
 }
 
 /* footer-container style end */
