@@ -191,12 +191,13 @@ header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 .pogramming-language{
     padding: 40px;
     margin: 10px;
     border-radius: 8px;
-    width: 32%;
+    width: 31%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: left;
 }
@@ -291,3 +292,31 @@ form button{
     color: black;
 }
 /* support-container style end */
+
+/* footer-container style start */
+.footer-container{
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 80%;
+    margin: auto;
+}
+.footer-container p{
+    margin: 0;
+    font-size: 17px;
+    color: black;
+}
+.footer-icons{
+    margin-top: 20px;
+}
+.social-icon{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* footer-container style end */
