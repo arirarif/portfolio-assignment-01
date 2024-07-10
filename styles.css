@@ -164,9 +164,66 @@ header{
 }
 .inspiration-video-wrapper iframe{
     width: 100%;
-    /* max-width: 800px; */
     height: 600px;
     border: none;
     border-radius: 8px;
 }
 /* inspiration-container end */
+
+/* current-target-container style start */
+.current-target-container{
+    padding: 50px 0;
+    text-align: center;
+}
+.current-target-container .current-target-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.current-target-content h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.current-target-content p{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.pogramming-languages{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.pogramming-language{
+    padding: 40px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 32%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+.pogramming-language img{
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+.pogramming-language h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.pogramming-language p{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.pogramming-language a{
+    text-decoration: none;
+    columns: #007bff;
+    font-weight: bold;
+}
+.pogramming-language.html{
+    background-color: #ffe6e6;
+}
+.pogramming-language.css{
+    background-color: #e6f0ff;
+}
+.pogramming-language.js{
+    background-color: #fffbe6;
+}
+/* current-target-container style end */
