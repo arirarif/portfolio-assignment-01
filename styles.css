@@ -109,11 +109,16 @@ header{
 .reason-container img{
     width: 150px;
     height: 150px;
-    margin-right: 20px;
     border-radius: 8px;
 }
-.reason-text-content{
+
+.reason-container.left{
+    flex-direction: row;
+}
+
+.reason-container .reason-text-content{
     text-align: left;
+    flex: 1;
 }
 .reason-text-content h3{
     font-size: 24px;
@@ -133,3 +138,35 @@ header{
 }
 
 /* why-development-container style end */
+
+/* inspiration-container start */
+.inspiration-container{
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+.inspiration-content{
+    width: 80%;
+    margin: 0 auto;
+}
+.inspiration-content p{
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+.inspiration-video-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+
+}
+.inspiration-video-wrapper iframe{
+    width: 100%;
+    /* max-width: 800px; */
+    height: 600px;
+    border: none;
+    border-radius: 8px;
+}
+/* inspiration-container end */
